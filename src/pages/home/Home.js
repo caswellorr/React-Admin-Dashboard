@@ -1,7 +1,11 @@
+import './home.scss';
+
+// Components
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widget/Widget';
-import './home.scss';
+import Featured from '../../components/featured/Featured';
+import Chart from '../../components/chart/Chart';
 
 function Home() {
   return (
@@ -12,8 +16,12 @@ function Home() {
         <div className='widgets'>
           <Widget type='user' />
           <Widget type='order' />
-          <Widget type='earnings' />
+          <Widget type='earning' />
           <Widget type='balance' />
+        </div>
+        <div className='charts'>
+          <Featured />
+          <Chart />
         </div>
       </div>
     </div>
